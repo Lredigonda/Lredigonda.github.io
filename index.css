@@ -7,13 +7,10 @@
 
                             /* HEADER */
 header{
-    /* background-image: url(./jkC2me.jpg); */
-    /* background-image: url(./301-3012185_luxury-home-hd-photo-luxury-home-images-hd.jpg); */
-    /* background-image: url(./bdae9M.jpg); */
     background-image: url(./bdae9M\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:inherit
+    background-position:inherit;
 }
 .logo{
     background-color: white;
