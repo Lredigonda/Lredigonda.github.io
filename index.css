@@ -8,6 +8,7 @@
                             /* HEADER */
 header{
     background-image: url(./bdae9M\ \(1\).jpg);
+    background-image: url(/modern-glass-house-pool-b6afr6rnncxe9y97\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:inherit;
@@ -75,10 +76,10 @@ header{
 .nav__list-page li{
     /* padding: 10px 40px 10px 40px; */
     font-size: 20px;
+    
 }
-.nav__list-page li button{
-    width: 180px;
-    height: 40px;
+.nav__list-page li a{
+    margin-left: 50px;
     font-size: 20px;
     border:none;
     background-color: transparent ;
