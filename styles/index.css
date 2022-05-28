@@ -9,6 +9,7 @@
     --footertitle: #0d0d0d;
     --footertext: #2a2a2a;
     --footercreator: #ff8e3c;
+    --main-font-letter: 'Montserrat', sans-serif;
 }
 @font-face {
     font-family: Roboto;
@@ -123,6 +124,90 @@ header{
     margin:10px 100px 10px 40px;
     color: white;
 }
+
+                            /*MAIN*/
+main {
+    display: flex;
+    width: 100vw;
+    max-height: 200vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+}
+
+main section h1 {
+    font-family: var(--main-font-letter);
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+main section p {
+    color: white;
+    font-family: var(--main-font-letter);
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.main__filters {
+    padding: 20px;
+}
+
+.main__filters button {
+    font-family: var(--main-font-letter);
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #163cd5;
+    border: none;
+    cursor: pointer;
+}
+
+.main__filters button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #163cd5;
+}
+
+.operacion-hidden {
+    display: none;
+}
+
+#operation {
+    display:block;
+}
+
+.operacion_article {
+    border: 1px solid red;
+    display: none;
+}
+
+.operacion_article-show {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: var(--main-font-letter);
+}
+
+/*  */
+
                             /*FOOTER*/
 footer{
     width: 100%;
