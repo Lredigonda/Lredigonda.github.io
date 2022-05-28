@@ -35,17 +35,20 @@ header{
     display: flex;
     width: 100%;
     height: 110px;
+    
 }
 .Nav__Secondary{
    margin-top: 25px;
     display: flex;
     width: 100%;
-    
+    position: sticky;
+    top: 0;
 }
 .nav__list-user{
     right: 0;
     position: absolute;
     width: 250px;
+    
     
 }
 .nav__list-user_A{
@@ -56,6 +59,7 @@ header{
     background-color: transparent ;
     color: white;
 }
+
 .nav__list-user_B{
     font-size: 20px;
     margin: 10px 10px 10px 5px;
@@ -87,6 +91,7 @@ header{
 }
 
 
+
 .header__Title{
     display: inline-block;
     font-size: 40px;
@@ -110,6 +115,10 @@ header{
     border: none;
     padding-left: 10px;
     border-radius: 5px;
+    
+}
+.Search__input-address:focus{
+    outline: none;
 }
 .Search__button{
     width: 150px;
@@ -126,4 +135,6 @@ header{
     margin:10px 100px 10px 40px;
     color: white;
 }
-
+p{
+    font-size: 150px;
+}
