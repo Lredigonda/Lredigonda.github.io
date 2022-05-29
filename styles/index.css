@@ -149,18 +149,16 @@ main section {
     text-align: center;
 }
 
-main section h1 {
+main h1 {
     font-family: var(--main-font-letter);
     font-size: 50px;
     color: #fff;
     text-shadow: 1px 1px 2px black;
-}
-
-main section p {
-    color: white;
-    font-family: var(--main-font-letter);
-    font-size: 20px;
-    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    top: 20vh;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .main__filters {
@@ -191,19 +189,26 @@ main section p {
     display:block;
 }
 
-.operacion_article {
-    border: 1px solid red;
+.main__filters-article {
     display: none;
 }
 
-.operacion_article-show {
+.main__filters-article-active {
     width: 30vw;
     height: 30vh;
     border-radius: 10px;
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
+    background-color: #fff;
+    color: black;
+    font-family: var(--main-font-letter);
+}
+main p {
+    position: absolute;
+    bottom: 10px;
     color: white;
     font-family: var(--main-font-letter);
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
 }
 
 /*  */
