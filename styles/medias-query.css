@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+    main h1 {
+        border: none;
+        top: 10vh;
+    }
+
+    main img {
+        height: 50vh;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 30vh;
+        margin-top: 10px;
+    }
+
+    .main__filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30vh;
+    }
+
+    .main__filters-clicked article {
+        width: 50vw;
+        height: 25vh;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    main h1 {
+        top: 10vh;
+    }
+
+    main img {
+        min-height: 102vh;
+    }
+}
+
