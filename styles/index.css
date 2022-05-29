@@ -137,7 +137,7 @@ main {
 
 main img {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 101vh;
 }
 
 main section {
@@ -174,6 +174,7 @@ main h1 {
     background-color: #163cd5;
     border: none;
     cursor: pointer;
+    color: #fff;
 }
 
 .main__filters button:hover {
@@ -194,13 +195,22 @@ main h1 {
 }
 
 .main__filters-article-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 30vw;
     height: 30vh;
     border-radius: 10px;
     background-color: #fff;
     color: black;
-    font-family: var(--main-font-letter);
 }
+
+.main__filters-article-active h3 {
+    padding: 20px 10px 0 10px;
+    font-family: var(--main-font-letter);
+    border-bottom: 1px solid black;
+}
+
 main p {
     position: absolute;
     bottom: 10px;
