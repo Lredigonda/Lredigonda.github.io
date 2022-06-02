@@ -5,6 +5,8 @@
     font-family: Roboto;
 }
 :root{
+    --headerbackgrouncolor: #2259b3;
+    --fontcolorheader: #000000;
     --footerbackground: #eff0f3;
     --footertitle: #0d0d0d;
     --footertext: #2a2a2a;
@@ -17,11 +19,8 @@
 }
                             /* HEADER */
 header{
-    background-image: url('./assets/bdae9M\ \(1\).jpg ');
-    background-image: url('./assets/modern-glass-house-pool-b6afr6rnncxe9y97\ \(1\).jpg ');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:inherit;
+    background-color: var(--footerbackground);
+    width: 100vw;
 }
 .logo{
     background-color: white;
@@ -38,17 +37,23 @@ header{
     margin-top: 40px;
     margin-left: 110px;
     position: absolute;
-    color: white;
+    color: var(--footertext);
+    font-family: var(--main-font-letter);
 }
 .Nav__Primary{
     display: flex;
     width: 100%;
     height: 110px;
+    
 }
 .Nav__Secondary{
-    margin-top: 25px;
+    padding: 15px 0px 15px 0px;
     display: flex;
-    width: 100%;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    background-color: var(--footerbackground);
+    z-index: 100;
 }
 .nav__list-user{
     right: 0;
@@ -61,7 +66,8 @@ header{
     padding: 0px 5px;
     border: none;
     background-color: transparent;
-    color: white;
+    color: var(--fontcolorheader);
+    font-family: var(--main-font-letter);
 }
 .nav__list-user_B{
     font-size: 20px;
@@ -69,29 +75,33 @@ header{
     padding: 0px 5px;
     border: none;
     background-color: transparent;
-    color: white;
+    color: var(--fontcolorheader);
+    font-family: var(--main-font-letter);
 }
 .nav__list-page{
     list-style: none;
     display: flex;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 .nav__list-page li{
     /* padding: 10px 40px 10px 40px; */
     font-size: 20px;
 }
 .nav__list-page li a{
-    margin-left: 50px;
-    font-size: 20px;
+    margin-left: 40px;
+    font-size: 25px;
     border:none;
     background-color: transparent;
-    color: white;
+    color: var(--fontcolorheader);
+    font-family: var(--main-font-letter);
+    
 }
 .header__Title{
     display: inline-block;
     font-size: 40px;
-    margin:55px 100px 50px 40px;
-    color: white;
+    margin:55px 100px 10px 40px;
+    color: var(--fontcolorheader);
+    font-family: var(--main-font-letter);
 }
 .header__Search{
     margin-left: 40px;
@@ -100,6 +110,7 @@ header{
     width: 550px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: #000000 0px 0px 3px;
 }
 .Search__input-address{
     height: 60px;
@@ -108,6 +119,11 @@ header{
     border: none;
     padding-left: 10px;
     border-radius: 5px;
+    font-family: Arial, Helvetica, italic;
+    
+}
+.Search__input-address:focus{
+    outline: none;
 }
 .Search__button{
     width: 150px;
@@ -117,12 +133,15 @@ header{
     margin-right: 5px;
     border-radius: 5px;
     font-size: 20px;
-    color: white;
+    color: var(--fontcolorheader);
     background-color: rgb(44, 112, 238);
+    font-family: var(--main-font-letter);
 }
 .header__subtitle{
-    margin:10px 100px 10px 40px;
-    color: white;
+    /* padding-bottom: 30px; */
+    margin:10px 100px 0px 40px;
+    color: var(--footertitle);
+    font-family: var(--main-font-letter);
 }
 
                             /*MAIN*/
@@ -168,7 +187,7 @@ main h1 {
 .main__filters button {
     font-family: var(--main-font-letter);
     font-size: 20px;
-    width: 150px;
+    min-width: 170px;
     height: 40px;
     border-radius: 5px;
     background-color: #163cd5;
@@ -254,7 +273,7 @@ img{
     width: 50px;
     height: 50px;
 }
-ul{
+footer ul{
     width: 20%;
     list-style: none;
     display: flex;

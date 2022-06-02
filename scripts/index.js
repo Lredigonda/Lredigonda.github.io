@@ -17,6 +17,7 @@ const showElement = (element, addClass, deleteClass) => {
     }
 };
 
+
 [...filterButtons].forEach(button => {
     button.addEventListener('click', () => {
         const articles = button.parentNode.nextElementSibling.children;
@@ -31,3 +32,7 @@ const showElement = (element, addClass, deleteClass) => {
     });
 });
 
+// STICKY NAVBAR
+const navbar = document.getElementById('Nav__Secondary')
+
+//Function
