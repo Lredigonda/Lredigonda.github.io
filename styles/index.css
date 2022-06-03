@@ -22,20 +22,21 @@ header{
     background-color: var(--footerbackground);
     width: 100vw;
 }
-.logo{
+.logo img{
     background-color: white;
-    width: 50px;
-    height: 50px;
-    margin-top: 40px;
-    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 40px;
     border-radius: 100%;
+    box-shadow: #000000 0px 0px 3px;
     
 }
 .Header__pagename{
     box-sizing: border-box;
-    font-size: 45px;
-    margin-top: 40px;
-    margin-left: 110px;
+    font-size: 75px;
+    margin-top: 25px;
+    margin-left: 150px;
     position: absolute;
     color: var(--footertext);
     font-family: var(--main-font-letter);
@@ -47,30 +48,40 @@ header{
     
 }
 .Nav__Secondary{
-    padding: 15px 0px 15px 0px;
+    padding: 10px 0px 10px 0px;
     display: flex;
     width: 100vw;
     position: sticky;
     top: 0;
     background-color: var(--footerbackground);
+    box-shadow: #000000 0px 2px 2px;
     z-index: 100;
 }
 .nav__list-user{
     right: 0;
     position: absolute;
-    width: 250px;
+    width: 350px;
 }
 .nav__list-user_A{
-    font-size: 20px;
+    width: 140px;
+    height: 40px;
+    font-size: 30px;
     margin: 10px 5px 10px 10px;
     padding: 0px 5px;
     border: none;
-    background-color: transparent;
-    color: var(--fontcolorheader);
+    border-radius: 5px;
+    background-color: var(--headerbackgrouncolor);
+    color: var(--footerbackground);
+    box-shadow: #000000 0px 0px 3px;
     font-family: var(--main-font-letter);
 }
+.nav__list-user_A:hover{
+    background-color: var(--footertext);
+    transition: 0.5s;
+    
+}
 .nav__list-user_B{
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px 10px 10px 5px;
     padding: 0px 5px;
     border: none;
@@ -81,41 +92,47 @@ header{
 .nav__list-page{
     list-style: none;
     display: flex;
-    /* padding-left: 10px; */
+    width: 50%;
+    justify-content: space-around;
 }
 .nav__list-page li{
-    /* padding: 10px 40px 10px 40px; */
     font-size: 20px;
 }
 .nav__list-page li a{
-    margin-left: 40px;
     font-size: 25px;
     border:none;
     background-color: transparent;
-    color: var(--fontcolorheader);
+    text-shadow: 1px 1px 2px rgb(114, 114, 114);
+    color: var(--headerbackgrouncolor);
     font-family: var(--main-font-letter);
-    
+        
+}
+.nav__list-page li a:hover{
+    transition: 1s;
+    border-top: solid 1px var(--headerbackgrouncolor);
+    border-bottom: solid 1px var(--headerbackgrouncolor);
+    transition: 1s;
 }
 .header__Title{
     display: inline-block;
-    font-size: 40px;
+    font-size: 50px;
     margin:55px 100px 10px 40px;
-    color: var(--fontcolorheader);
+    color: var(--footertitle);
     font-family: var(--main-font-letter);
 }
 .header__Search{
     margin-left: 40px;
     margin-bottom: 15px;
     display: flex;
-    width: 550px;
+    width: 840px;
     background-color: white;
     border-radius: 5px;
     box-shadow: #000000 0px 0px 3px;
 }
 .Search__input-address{
     height: 60px;
-    width: 450px;
-    font-size: 20px;
+    width: 685px;
+    font-size: 25px;
     border: none;
     padding-left: 10px;
     border-radius: 5px;
@@ -130,15 +147,17 @@ header{
     height: 50px;
     border: none;
     margin-top:5px ;
-    margin-right: 5px;
     border-radius: 5px;
-    font-size: 20px;
-    color: var(--fontcolorheader);
+    font-size: 30px;
+    color: var(--footerbackground);
     background-color: rgb(44, 112, 238);
     font-family: var(--main-font-letter);
 }
+.Search__button:active{
+    background-color: var(--footertext);
+}
 .header__subtitle{
-    /* padding-bottom: 30px; */
+    padding-bottom: 30px;
     margin:10px 100px 0px 40px;
     color: var(--footertitle);
     font-family: var(--main-font-letter);
