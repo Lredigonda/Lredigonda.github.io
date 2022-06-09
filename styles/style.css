@@ -264,6 +264,9 @@ a{
 }
 .Bottfooter{
     padding-top: 2%;
+    padding-bottom: 1%;
+    position: absolute;
+    bottom: 0;
 }
 i{
     color: var(--footercreator);
