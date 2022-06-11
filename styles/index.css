@@ -17,7 +17,7 @@
     font-family: Roboto;
     src: url('./assets/Roboto/Roboto-Thin.ttf');
 }
-                            /* HEADER */
+                          /* HEADER */
 header{
     background-color: var(--footerbackground);
     width: 100vw;
