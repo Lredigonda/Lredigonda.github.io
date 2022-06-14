@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-letter: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--main-font-letter);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+nav h1 {
+    font-size: xx-large;
+    animation: animation 2s infinite;
+}
+
+@keyframes animation {
+    0% {
+        color: rgb(36, 35, 35);
+    }
+    50% {
+        background: -webkit-linear-gradient(#ff9a9e, #fad0c4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/modern-glass-house-pool-b6afr6rnncxe9y97\ \(1\).jpg);
+    background-position: center;
+    height: 90vh;
+}
+
+main form {
+    background: linear-gradient(#336b9b, rgb(54, 54, 105));
+    width: 35vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px ;
+}
+
+main h2 {
+    color: white;
+    text-shadow: 2px 3px 3px black;
+}
+
+main form input {
+    width: 350px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.botones input {
+    width: 150px;
+}
+
+
