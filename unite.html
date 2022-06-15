@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/unite.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,8 @@
         <title>Inmobiliaria</title>
     </head>
     <body>
-        <nav class="Nav__primary" id="Nav__Secondary">
+        <nav class="Nav__primary" id="Nav__primary">
+            <a href="./index.html"><img class="logo" src="./assets/houselogo1.jpg" alt="house-logo"></a>
             <ul class="nav__list-page">
                 <li class="nav__list-page_A"><a>Tasasiones</a></li>
                 <li class="nav__list-page_B"><a>Propiedades</a></li>
@@ -26,44 +27,103 @@
             </div>
         </nav>
         <header>
-            <div class="">
-                <h2 class="Header__pagename">HousePrice</h2>
-                <div class="logo"><img src="./assets/houselogo1.jpg" alt="house-logo"></div>
-            </div>
-            <h3 class="header__Title" >Con nuestra ayuda podras facilitar el tasado de tu inmueble</h3>
-            <h2 class="header__subtitle">obtendras un valor apoximado de tu hogar</h2>
-            <div class="header__Search">
-                <input type="text" class="Search__input-address" placeholder="Ingresa la dirección del inmueble">
-                <button class="Search__button">Buscar</button>
-            </div>
+            <h3 class="contact__title" >¿Le gustaría sumarse a nuestro equipo? Complete el formulario.</h3>
         </header>
         <main>
-                <img src="./assets/bdae9M (1).jpg" alt="main_background-img">
-                <h1>Expertos en Rosario</h1>
-                <section>
-                    <div class="main__filters">
-                        <button id="operacion">Operacion &#128317;</button>
-                        <button id="tipologia">Tipologia &#128317;</button>
-                        <button id="dormitorios">Dormitorios &#128317;</button>
+            
+            <section id="contact" class="contact" >
+                
+                <!-- <h3 class="contact__title" >¿Le gustaría sumarse a nuestro equipo? Complete el formulario.</h3> -->
+                
+                <form id="contact__form" class="contact__form">
+                    
+                    <div class="contact__form-group">
+                        <label>Nombre</label>
+                        <input class="contact__form-name" name="nombre" type="text" required="">
                     </div>
-                    <div class="main__filters-clicked">
-                        <article class="main__filters-article">
-                            <h3>Tipo de operacion</h3>
-                        </article>
-                        <article class="main__filters-article">  
-                            <h3>Tipologia</h3>
-                        </article>
-                        <article class="main__filters-article">  
-                            <h3>Dormitorios</h3>
-                        </article>
+                    
+                    <div class="contact__form-group">
+                        <label>Apellido</label>
+                        <input class="contact__form-lastname" name="apellido" type="text" required="">
                     </div>
-                </section>    
-                <p>Te damos las herramientas digitales para vender o comprar tu propiedad</p>  
+                    
+                    <div class="contact__form-group">
+                        <label>DNI / CUIL</label>
+                        <input class="contact__form-dni" name="dni" type="text" required="">
+                    </div>
+                    
+                    <div class="contact__form-group">
+                        <label>Fecha de nacimiento</label>
+                        <input class="contact__form-borndate" name="nacimiento" type="date" required="">
+                    </div>
+                    
+                    <div class="contact__form-group">
+                        <label>Lugar de nacimiento</label>
+                        <input class="contact__form-bornplace" name="lugar" required="">
+                    </div>
+                    
+                    <div class="contact__form-group">
+                        <label>Domicilio</label>
+                        <input class="contact__form-address" name="domicilio" required="">
+                    </div>
+                   
+                    <div class="contact__form-group">
+                        <label>Estado Civil </label>
+                        <select class="contact__form-civilstate" name="estado-civil">
+                            <option value="soltero">Soltero/a</option>
+                            <option value="casado">Comprometido/a</option>
+                            <option value="casado">Casado/a</option>
+                            <option value="divorciado">Divorciado/a</option>
+                            <option value="viudo">Viudo/a</option>
+                        </select>
+                    </div>
+                    
+                    <div class="contact__form-group">
+                        <label>Teléfono de contacto</label>
+                        <input class="contact__form-phone" name="telefono" required="">
+                    </div>
+                    
+                    <div class="contact__form-group">
+                           <label>Email</label>
+                        <input class="contact__form-mail" name="email" required="">
+                    </div>
+                    
+                    <div class="contact__form-group">
+                        <label>Adjuntar CV</label>
+                        <input type="file" class="contact__form-cv" name="archivo1" file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" file-maxsize="5000" file-minsize="0" file-limit="0" value="Subir archivo" required="">
+                    </div>
+                    
+                    <div class="contact__form-group">
+                        <label>Remuneracion pretendida</label>
+                        <input class="contact__form-remuneracion" name="remuneracion" type="number">
+                    </div>
+                    
+                    <div class="contact__form-group">
+                        <label>Área de interés </label>
+                        <select class="contact__form-puesto" name="estado-civil" form="carform">
+                            <option value="administrativa">Administrativa</option>
+                            <option value="ventas">Ventas</option>
+                            <option value="produccion">Tasaciones</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="contact__form-group">
+                        <label>Comentarios</label>
+                        <textarea class="contact__form-comentarios" ></textarea>
+                    </div>
+                    <div class="contact__form-buttons">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar todo">
+                    </div>
+                    
+                </form>
+            </section>
         </main>
+       
         <footer>
             <div class="FooterContainer animate__animated animate__backInUp">
                 <div class="Topfooter">
-                    <img src="/assets/minicasa.jpg" alt="HouseImage">
+                    <img src="./assets/minicasa.jpg" alt="HouseImage">
                     <ul>
                         <li>
                             <a href="#">
@@ -117,6 +177,6 @@
                 </div>
             </div>
         </footer>
-        <script src="./scripts/index.js"></script>
+        <script src="./scripts/propiedades.js"></script>
     </body>
 </html>
