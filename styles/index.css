@@ -15,6 +15,9 @@
     font-family: Roboto;
     src: url('./assets/Roboto/Roboto-Thin.ttf');
 }
+body{
+    overflow-x: hidden;
+}
                             /* HEADER */
 header{
     background-image: url('./assets/bdae9M\ \(1\).jpg ');
